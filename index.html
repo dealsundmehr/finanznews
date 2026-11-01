@@ -2,8 +2,8 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Finanznews vom 1. November 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finanznews vom 01.11.2026</title>
 <style>
 :root {
   --bg: #f2f4f3;
@@ -13,10 +13,9 @@
   --line: #d9dfdd;
   --accent: #0e6b5c;
   --accent-soft: #e2f1ee;
-  color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+  :root {
     --bg: #121816;
     --card: #1b2421;
     --text: #e9efed;
@@ -24,7 +23,6 @@
     --line: #2c3834;
     --accent: #5fd0bb;
     --accent-soft: #1f3a34;
-    color-scheme: dark;
   }
 }
 * { box-sizing: border-box; }
@@ -38,16 +36,10 @@ body {
 }
 .wrap { max-width: 1100px; margin: 0 auto; }
 header { margin-bottom: 32px; }
-h1 { margin: 0 0 4px; font-size: 2.2rem; letter-spacing: -0.01em; }
+h1 { margin: 0 0 8px; font-size: 2.2rem; line-height: 1.2; }
 .sub { margin: 0; color: var(--muted); }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-@media (max-width: 859px) {
-  .grid { grid-template-columns: minmax(0, 1fr); }
-}
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 859px) { .grid { grid-template-columns: 1fr; } }
 .card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -55,100 +47,76 @@ h1 { margin: 0 0 4px; font-size: 2.2rem; letter-spacing: -0.01em; }
   padding: 24px;
   display: flex;
   flex-direction: column;
-  min-width: 0;
 }
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
-.tag {
+.meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+.pill {
   display: inline-block;
-  padding: 3px 12px;
-  border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent);
+  border-radius: 999px;
+  padding: 2px 12px;
   font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
 }
 .time { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
-.card h2 { margin: 0 0 12px; font-size: 1.2rem; line-height: 1.35; }
-.card p { margin: 0 0 12px; color: var(--text); }
+h2 { font-size: 1.2rem; margin: 0 0 12px; line-height: 1.35; }
+.card p { margin: 0 0 12px; }
 .foot {
   margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid var(--line);
-  font-size: 0.85rem;
-  color: var(--muted);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 .foot a { color: var(--accent); font-weight: 600; text-decoration: none; }
 .foot a:hover { text-decoration: underline; }
-.foot a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-footer { margin-top: 36px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>Finanznews</h1>
-    <p class="sub">Die drei heißesten Meldungen des Tages, Sonntag, 1. November 2026</p>
+    <p class="sub">Die heißesten Meldungen des Tages, Sonntag, 01.11.2026</p>
   </header>
 
   <main class="grid">
     <article class="card">
-      <div class="card-top">
-        <span class="tag">Krypto</span>
-        <span class="time">01.11.2026, 01:38 Uhr</span>
+      <div class="meta">
+        <span class="pill">Krypto</span>
+        <span class="time">01.11.2026</span>
       </div>
-      <h2>FBI macht Nordkorea für Rekord-Krypto-Diebstahl bei Binance verantwortlich</h2>
-      <p>Die US-Bundespolizei sieht die Hackergruppe TraderTraitor hinter dem Diebstahl von rund 6,3 Milliarden US-Dollar bei der Krypto-Börse Binance. Es handelt sich laut FBI um den bislang größten Krypto-Raub überhaupt.</p>
-      <p>Die Täter tauschten die erbeuteten Werte überwiegend in Ether und dürften die Spur über DeFi-Plattformen und Sofort-Tauschdienste verschleiern. Binance hat nach eigenen Angaben etwa 90 Prozent der Verluste gedeckt und will Kunden keinen Schaden entstehen lassen.</p>
+      <h2>Binance öffnet Bitcoin-Auszahlungen nach Milliarden-Hack wieder</h2>
+      <p>Die Kryptobörse Binance hat nach dem Diebstahl von rund 6,3 Milliarden US-Dollar ihre Auszahlungen schrittweise wieder freigegeben. Den Anfang macht Bitcoin, weitere Netzwerke sollen folgen, sobald sie die Sicherheitsprüfungen bestanden haben.</p>
+      <p>Nach Angaben des Unternehmens sind rund 95 Prozent der betroffenen Vermögenswerte aus eigenen Mitteln und Rücklagen ersetzt worden. Laut Medienberichten ordnet das FBI die Tat Nordkorea zu.</p>
       <div class="foot">
-        <span>Quelle: Investing.com (Deutsch)</span>
-        <a href="https://de.investing.com/news/economy-news/fbi-schreibt-rekordkryptodiebstahl-bei-binance-uber-63-milliarden-dollar-nordkorea-zu-3737492" target="_blank" rel="noopener noreferrer">Zum Originalartikel</a>
+        <span>Quelle: CoinDesk</span>
+        <a href="https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack" target="_blank" rel="noopener noreferrer">Zum Originalartikel</a>
       </div>
     </article>
 
     <article class="card">
-      <div class="card-top">
-        <span class="tag">Börse</span>
-        <span class="time">31.10.2026, 20:23 Uhr</span>
+      <div class="meta">
+        <span class="pill">Zinsen</span>
+        <span class="time">01.11.2026</span>
       </div>
-      <h2>DAX schließt Börsenwoche mit Plus trotz schwachem Freitag</h2>
-      <p>Der deutsche Leitindex gewann in der Woche rund 2,5 Prozent, verlor am Freitag aber gut ein Prozent. Zeitweise hatte er zu Wochenbeginn wieder die Marke von 26.000 Punkten überschritten. Belastet wurden die Kurse durch Zinssorgen, steigende Ölpreise und die anstehenden US-Zwischenwahlen.</p>
-      <p>Die US-Notenbank ließ ihren Leitzins unverändert, hält aber eine Anhebung im Dezember offen. Gold fiel darauf unter 3.900 Dollar, Silber unter 50 Dollar. Bei Einzelwerten legte Bayer nach positiven Studiendaten zu, Symrise verlor nach vorsichtigem Ausblick rund zehn Prozent.</p>
+      <h2>Bauzinsen erreichen bis zu 4,9 Prozent</h2>
+      <p>Die Zinsen für Baufinanzierungen liegen laut aktuellen Angaben teils bei bis zu 4,9 Prozent pro Jahr. Für Käufer bedeutet das deutlich höhere monatliche Raten als noch vor einiger Zeit.</p>
+      <p>Die langfristigen Bauzinsen hängen vor allem an den Entwicklungen auf den Anleihemärkten. Da sich Angebote je nach Laufzeit und Darlehenshöhe stark unterscheiden, lohnt ein direkter Vergleich.</p>
       <div class="foot">
-        <span>Quelle: trading-treff.de</span>
-        <a href="https://trading-treff.de/wirtschaft/dax-wochenplus-trotz-wackligem-freitag" target="_blank" rel="noopener noreferrer">Zum Originalartikel</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="card-top">
-        <span class="tag">Krypto</span>
-        <span class="time">31.10.2026</span>
-      </div>
-      <h2>Bitcoin-ETFs verzeichnen größten Tagesabfluss seit Juni</h2>
-      <p>Die US-Spot-Bitcoin-ETFs verloren am Freitag netto rund 643 Millionen US-Dollar. Es war der stärkste Tagesabfluss seit dem 25. Juni und beendete eine Serie von vier Tagen mit Zuflüssen. Drei Fonds, darunter BlackRocks iShares Bitcoin Trust, machten fast 88 Prozent der Abflüsse aus.</p>
-      <p>Die Analyse ordnet den Abfluss als Umschichtung institutioneller Anleger ein und bezieht ihn auf rund 98 Milliarden US-Dollar verwaltetes ETF-Vermögen. Zusätzlich wurden am Freitag Leverage-Positionen für etwa 427 Millionen Dollar zwangsliquidiert.</p>
-      <div class="foot">
-        <span>Quelle: CryptoTicker.io (Daten: Farside Investors)</span>
-        <a href="https://cryptoticker.io/de/bitcoin-kurs-etf-abfluss-643-millionen-31-oktober" target="_blank" rel="noopener noreferrer">Zum Originalartikel</a>
+        <span>Quelle: Kurier</span>
+        <a href="https://www.kurierverlag.de/wirtschaft/bauzinsen-2026-bis-zu-prozent-was-hauskaeufer-jetzt-zahlen-zr-94568055.html" target="_blank" rel="noopener noreferrer">Zum Originalartikel</a>
       </div>
     </article>
   </main>
 
   <footer>
-    Zusammenfassungen in eigenen Worten, abgerufen am 1. November 2026. Keine Anlageberatung.
+    Zusammenfassungen in eigenen Worten, abgerufen am 01.11.2026. Keine Anlageberatung.
   </footer>
 </div>
 </body>
